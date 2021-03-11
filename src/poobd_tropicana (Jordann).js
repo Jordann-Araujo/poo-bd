@@ -1,7 +1,7 @@
 const {Pool} = require("pg");
 
 const pool = new Pool({
-    connectionString: ' ',
+    connectionString: '',
     ssl: {
         rejectUnauthorized: false
     }
@@ -35,7 +35,7 @@ async function mostrarTuplas(tabela) {
     }
     con.release();
 }
-
+/*
 adicionarTuplas(`
     insert into pessoa (id_pessoa, nome) values (1, 'José');
     insert into pessoa (id_pessoa, nome) values (2, 'João');
@@ -53,5 +53,5 @@ atualizarTuplas(`
 deletarTuplas(`
     delete from pessoa where nome like 'J%'
 `)
-
-mostrarTuplas('pessoa');
+*/
+mostrarTuplas('cliente');
